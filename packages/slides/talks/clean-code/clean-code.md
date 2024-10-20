@@ -77,7 +77,7 @@ layout: leaflet
 
 ---
 
-## Why Clean Code?
+### Why Clean Code?
 
 - **읽기 좋은 코드는 유지보수성을 높인다.**
   - 서로의 작업을 더 쉽게 이해할 수 있다.
