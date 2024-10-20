@@ -1,0 +1,17 @@
+{
+  "name": "slides",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "mkdir -p dist && for md in talks/*/*.md; do dir=$(basename $(dirname $md)) && bun slidev build --output ${md%/*}/dist --base /$dir/ $md && rm -rf dist/$dir && mv ${md%/*}/dist dist/$dir; done",
+    "dev": "slidev --open",
+    "export": "slidev export"
+  },
+  "dependencies": {
+    "@slidev/cli": "^0.50.0-beta.4",
+    "vue": "^3.5.12"
+  },
+  "devDependencies": {
+    "playwright-chromium": "^1.48.1"
+  }
+}

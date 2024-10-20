@@ -1,0 +1,14 @@
+{
+  "name": "slides",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "themes/*"
+  ],
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
+}

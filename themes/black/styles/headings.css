@@ -1,0 +1,25 @@
+h1,
+h2,
+h3,
+h4 {
+  margin-top: 0;
+  margin-bottom: var(--spacing-heading-4);
+  line-height: var(--line-height-headings);
+  font-weight: 550;
+  color: black;
+}
+
+h1 {
+  margin-bottom: var(--spacing-heading-1);
+  font-size: var(--font-size-2xl);
+}
+
+h2 {
+  margin-bottom: var(--spacing-heading-2);
+  font-size: var(--font-size-xl);
+}
+
+h3 {
+  margin-bottom: var(--spacing-heading-3);
+  font-size: var(--font-size-lg);
+}
