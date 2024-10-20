@@ -14,7 +14,7 @@
   --color-light-background-base: #fff;
   --color-dark-background-base: #27282c;
 
-  --font-size-base: 36px;
+  --font-size-base: 40px;
 
   --font-size-3xs: calc(var(--font-size-base) * 0.6);
   --font-size-2xs: calc(var(--font-size-base) * 0.625);
@@ -35,7 +35,7 @@
   --font-size-footer: var(--font-size-3xs);
 
   --line-height-headings: 1.25;
-  --line-height-base: 1.75;
+  --line-height-base: 1.8;
 
   --spacing-padding-section-x: 60px;
   --spacing-padding-section-y: 60px;

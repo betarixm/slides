@@ -9,7 +9,7 @@ const { currentPage, total, currentLayout } = useNav();
 <template>
   <footer>
     <span class="text-left">
-      <wordmark-postech />
+      <wordmark-postech style="height: 16px; margin-top: 4px" />
     </span>
     <span class="text-center">
       <template v-if="currentLayout != 'cover'">{{
@@ -39,9 +39,5 @@ footer {
   color: var(--color-light-text-secondary);
   line-height: 1;
   border-top: solid 1px var(--color-dark-background-base);
-
-  * {
-    height: calc(var(--font-size-footer) * 0.75);
-  }
 }
 </style>

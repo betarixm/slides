@@ -16,7 +16,7 @@
 .slidev-layout.disclaimer h1 {
   margin-bottom: var(--spacing-heading-4);
   grid-column: 1 / 4;
-  font-size: var(--font-size-base);
+  font-size: var(--font-size-lg);
 }
 
 .slidev-layout.disclaimer blockquote {
