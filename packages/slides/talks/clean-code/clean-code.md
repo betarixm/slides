@@ -3,6 +3,8 @@ theme: ../../../../themes/black
 layout: cover
 themeConfig:
   header: Clean Code
+  brandImage: "./wordmark-postech.svg"
+  brandText: "POSTECH"
 ---
 
 # Clean Code
