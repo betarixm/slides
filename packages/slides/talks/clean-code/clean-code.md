@@ -1,10 +1,27 @@
 ---
 theme: ../../../../themes/black
-layout: cover
+titleTemplate: '%s'
+author: Minjae Gwon
+keywords: Clean Code,Collaboration
+presenter: false
+download: true
+exportFilename: clean-code
+export:
+  format: pdf
+  timeout: 30000
+  dark: false
+  withClicks: true
+  withToc: true
+remoteAssets: true
+selectable: true
 themeConfig:
   header: Clean Code
-  brandImage: "./wordmark-postech.svg"
+  brandImage: "/clean-code/wordmark-postech.svg"
   brandText: "POSTECH"
+htmlAttrs:
+  dir: ltr
+  lang: ko
+layout: cover
 ---
 
 # Clean Code
@@ -712,7 +729,7 @@ layout: disclaimer
 
 **Disclaimer** This document is intended solely for seminar series within the POSTECH PLUS. Any use of its contents outside of this context is not endorsed or supported by us. We explicitly disclaim any responsibility for the application or interpretation of the information contained herein beyond our organization's boundaries.
 
-- <img src="./wordmark-postech.svg" style="height:1rem; margin-top:8px;" />
+- <img src="./public/wordmark-postech.svg" style="height:1rem; margin-top:8px;" />
 - Minjae Gwon
   - <minjae.gwon@postech.ac.kr>
   - <https://bxta.kr>

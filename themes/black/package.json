@@ -31,7 +31,7 @@
     "colorSchema": "light",
     "defaults": {
       "aspectRatio": "16/9",
-      "canvasWidth": "1920",
+      "canvasWidth": 1920,
       "fonts": {
         "sans": "Pretendard Variable",
         "mono": "JetBrains Mono",
