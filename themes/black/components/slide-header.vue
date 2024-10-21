@@ -1,12 +1,12 @@
 <script setup lang="ts">
 import type { TocItem } from "@slidev/types";
-import { useNav } from "@slidev/client";
+import { useSlideContext } from "@slidev/client";
 
-const { tocTree, currentPage } = useNav();
+const { $page, $nav } = useSlideContext();
 
 const findParentOfCurrentPage = (items: TocItem[]): TocItem | undefined => {
   for (const item of items) {
-    if (item.children.some((child) => child.no === currentPage.value)) {
+    if (item.children.some((child) => child.no === $page.value)) {
       return item;
     } else {
       const parent = findParentOfCurrentPage(item.children);
@@ -21,7 +21,7 @@ const findParentOfCurrentPage = (items: TocItem[]): TocItem | undefined => {
 
 <template>
   <header>
-    {{ findParentOfCurrentPage(tocTree)?.title }}
+    {{ findParentOfCurrentPage($nav.tocTree)?.title }}
   </header>
 </template>
 

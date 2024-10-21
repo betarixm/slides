@@ -1,8 +1,7 @@
 <script setup lang="ts">
-import { useNav, useSlideContext } from "@slidev/client";
+import { useSlideContext } from "@slidev/client";
 
-const { $slidev } = useSlideContext();
-const { currentPage, total, currentLayout } = useNav();
+const { $slidev, $page, $nav } = useSlideContext();
 </script>
 
 <template>
@@ -29,13 +28,13 @@ const { currentPage, total, currentLayout } = useNav();
         'text-left': !$slidev.themeConfigs.brandText,
       }"
     >
-      <template v-if="currentLayout != 'cover'">{{
+      <template v-if="$nav.currentLayout !== 'cover'">{{
         $slidev.configs.title
       }}</template>
     </span>
     <span class="text-right w-[16%]">
-      <template v-if="currentLayout != 'cover'"
-        >{{ currentPage }} / {{ total }}</template
+      <template v-if="$nav.currentLayout !== 'cover'"
+        >{{ $page }} / {{ $nav.total }}</template
       >
     </span>
   </footer>

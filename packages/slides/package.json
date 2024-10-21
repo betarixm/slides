@@ -3,7 +3,7 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "build": "mkdir -p dist && for md in talks/*/*.md; do dir=$(basename $(dirname $md)) && bun slidev build --output ${md%/*}/dist --base /$dir/ $md && rm -rf dist/$dir && mv ${md%/*}/dist dist/$dir; done",
+    "build": "mkdir -p dist && for md in talks/*/*.md; do dir=$(basename $(dirname $md)) && bun slidev build --output ${md%/*}/dist --base /$dir/ $md && rm -rf dist/$dir && mv ${md%/*}/dist dist/$dir && mv dist/$dir/talks/$dir/* dist/$dir/ && rm -rf mv dist/$dir/talks/; done",
     "dev": "slidev --open",
     "export": "slidev export"
   },
