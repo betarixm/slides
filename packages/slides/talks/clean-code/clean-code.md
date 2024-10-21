@@ -5,7 +5,7 @@ author: Minjae Gwon
 keywords: Clean Code,Collaboration
 presenter: false
 download: true
-exportFilename: clean-code
+exportFilename: /clean-code/talks/clean-code/dist
 export:
   format: pdf
   timeout: 30000
