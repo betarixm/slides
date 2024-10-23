@@ -1,0 +1,34 @@
+.slidev-layout {
+  position: relative;
+  width: 1920px;
+  height: 1080px;
+
+  padding: var(--spacing-padding-section-y) var(--spacing-padding-section-x)
+    calc(
+      var(--spacing-padding-footer-y) * 2 + var(--font-size-footer) +
+        var(--spacing-padding-section-y)
+    )
+    var(--spacing-padding-section-x);
+
+  font-family:
+    "Pretendard Variable",
+    Pretendard,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    Roboto,
+    "Helvetica Neue",
+    "Segoe UI",
+    "Apple SD Gothic Neo",
+    "Noto Sans KR",
+    "Malgun Gothic",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  font-size: var(--font-size-base);
+  font-weight: 400;
+  line-height: var(--line-height-base);
+  color: var(--color-light-text-primary);
+  background-color: var(--color-light-background-base);
+}

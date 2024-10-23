@@ -1,0 +1,47 @@
+ul,
+ol {
+  font-weight: 500;
+  padding-left: 1.5em; /* Typically used to indent list items */
+}
+
+ul {
+  list-style-type: disc; /* Top-level unordered list */
+}
+
+ul ul {
+  list-style-type: circle; /* 2nd-level nested unordered list */
+}
+
+ul ul ul {
+  list-style-type: square; /* 3rd-level nested unordered list */
+}
+
+ol {
+  list-style-type: decimal; /* Top-level ordered list */
+}
+
+ol ol {
+  list-style-type: lower-alpha; /* 2nd-level nested ordered list */
+}
+
+ol ol ol {
+  list-style-type: lower-roman; /* 3rd-level nested ordered list */
+}
+
+/* Nested lists with common styles */
+ul ul,
+ol ol,
+ul ol,
+ol ul {
+  font-weight: 400;
+  font-size: var(--font-size-sm);
+}
+
+li {
+  line-height: var(--line-height-base);
+}
+
+.slidev-layout > ul > li,
+.slidev-layout > ol > li {
+  margin-bottom: var(--spacing-li-base);
+}

@@ -1,0 +1,53 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css");
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
+
+:root {
+  --slidev-theme-primary: #1c1d1f;
+  --slidev-code-font-size: var(--font-size-xs);
+  --slidev-code-line-height: var(--line-height-base);
+  --slidev-code-padding: var(--spacing-p);
+
+  --color-light-text-primary: #000000;
+  --color-light-text-secondary: #666;
+  --color-light-text-highlight: #2754ff;
+  --color-light-background-base: #eee;
+  --color-dark-text-primary: #fff;
+  --color-dark-text-secondary: #ccc;
+  --color-dark-background-base: #27282c;
+
+  --font-size-base: 40px;
+
+  --font-size-3xs: calc(var(--font-size-base) * 0.6);
+  --font-size-2xs: calc(var(--font-size-base) * 0.625);
+  --font-size-xs: calc(var(--font-size-base) * 0.75);
+  --font-size-sm: calc(var(--font-size-base) * 0.875);
+  --font-size-lg: calc(var(--font-size-base) * 1.125);
+  --font-size-xl: calc(var(--font-size-base) * 1.25);
+  --font-size-2xl: calc(var(--font-size-base) * 1.5);
+  --font-size-3xl: calc(var(--font-size-base) * 1.875);
+  --font-size-4xl: calc(var(--font-size-base) * 2.25);
+  --font-size-5xl: calc(var(--font-size-base) * 3);
+  --font-size-6xl: calc(var(--font-size-base) * 3.75);
+  --font-size-7xl: calc(var(--font-size-base) * 4.5);
+  --font-size-8xl: calc(var(--font-size-base) * 6);
+  --font-size-9xl: calc(var(--font-size-base) * 8);
+
+  --font-size-header: var(--font-size-xs);
+  --font-size-footer: var(--font-size-3xs);
+
+  --line-height-headings: 1.25;
+  --line-height-base: 1.8;
+
+  --spacing-padding-section-x: 60px;
+  --spacing-padding-section-y: 60px;
+  --spacing-padding-footer-x: 60px;
+  --spacing-padding-footer-y: 32px;
+
+  --spacing-heading-1: 40px;
+  --spacing-heading-2: 32px;
+  --spacing-heading-3: 24px;
+  --spacing-heading-4: 16px;
+  --spacing-p: 16pt;
+  --spacing-li-base: 12pt;
+  --spacing-li-divider: 20pt;
+}

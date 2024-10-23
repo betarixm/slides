@@ -1,0 +1,24 @@
+p {
+  margin: 0 0 var(--spacing-p) 0;
+}
+
+blockquote {
+  margin: var(--spacing-p) inherit;
+}
+
+a {
+  color: var(--color-light-text-primary);
+  text-decoration: underline;
+}
+
+u {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-decoration-color: var(--color-light-text-primary);
+  text-underline-offset: 6px;
+  text-underline-position: under;
+}
+
+strong {
+  font-weight: 500;
+}

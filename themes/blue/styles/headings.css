@@ -1,0 +1,28 @@
+h1,
+h2,
+h3,
+h4 {
+  margin-top: 0;
+  margin-bottom: var(--spacing-heading-4);
+  font-family: "Avenir Next";
+  line-height: var(--line-height-headings);
+  font-weight: bold;
+  color: var(--color-light-text-highlight);
+}
+
+h1 {
+  margin-bottom: var(--spacing-heading-1);
+  font-size: var(--font-size-2xl);
+  filter: drop-shadow(0rem 0.75rem 0.75rem #2754ff50);
+}
+
+h2 {
+  margin-bottom: var(--spacing-heading-2);
+  font-size: var(--font-size-xl);
+  filter: drop-shadow(0rem 0.75rem 0.75rem #2754ff50);
+}
+
+h3 {
+  margin-bottom: var(--spacing-heading-3);
+  font-size: var(--font-size-lg);
+}
