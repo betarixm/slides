@@ -10,7 +10,7 @@
   flex-direction: column;
   font-size: var(--font-size-2xs);
   padding-bottom: var(--spacing-padding-section-y);
-  font-weight: 300;
+  font-weight: 150;
   background-color: var(--color-light-text-highlight);
   color: var(--color-light-background-base);
 }
@@ -18,8 +18,9 @@
 .slidev-layout.disclaimer h1 {
   margin-bottom: var(--spacing-heading-4);
   grid-column: 1 / 4;
-  font-size: var(--font-size-lg);
   color: var(--color-light-background-base);
+  font-size: var(--font-size-lg);
+  margin-bottom: 0.3rem;
 }
 
 .slidev-layout.disclaimer blockquote {
@@ -27,9 +28,9 @@
   grid-column: 1 / 4;
   flex-grow: 1;
 
-  font-size: var(--font-size-2xs);
-  font-weight: 400;
   color: var(--color-light-background-base);
+  font-size: var(--font-size-xs);
+  font-weight: 150;
 }
 
 .slidev-layout.disclaimer img {
@@ -61,7 +62,7 @@
 }
 
 .slidev-layout.disclaimer li {
-  font-weight: 300;
+  font-weight: 150;
   font-size: var(--font-size-2xs);
 }
 

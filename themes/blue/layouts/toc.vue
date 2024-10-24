@@ -31,13 +31,13 @@ import SlideFooter from "../components/slide-footer.vue";
   display: grid;
   grid-template-columns: 1fr 1fr;
   font-size: var(--font-size-2xl);
-  font-weight: 400;
+  font-weight: 300;
 }
 
 .slidev-layout.toc > ul > li > ul {
   font-size: var(--font-size-xs);
   line-height: 1;
   list-style-type: disc;
-  font-weight: 300;
+  font-weight: 150;
 }
 </style>

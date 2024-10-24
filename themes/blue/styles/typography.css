@@ -7,7 +7,6 @@ blockquote {
 }
 
 a {
-  color: var(--color-light-text-primary);
   text-decoration: underline;
 }
 

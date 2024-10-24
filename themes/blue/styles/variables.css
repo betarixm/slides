@@ -15,7 +15,7 @@
   --color-dark-text-secondary: #ccc;
   --color-dark-background-base: #27282c;
 
-  --font-size-base: 40px;
+  --font-size-base: 36px;
 
   --font-size-3xs: calc(var(--font-size-base) * 0.6);
   --font-size-2xs: calc(var(--font-size-base) * 0.625);

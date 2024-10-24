@@ -63,7 +63,7 @@ footer {
   box-sizing: border-box;
   display: flex;
   font-size: var(--font-size-footer);
-  font-weight: 300;
+  font-weight: 150;
   color: var(--color-light-text-secondary);
   line-height: 1;
   border-top: solid 1px var(--color-dark-background-base);

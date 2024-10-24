@@ -33,7 +33,7 @@ ul ul,
 ol ol,
 ul ol,
 ol ul {
-  font-weight: 400;
+  font-weight: 300;
   font-size: var(--font-size-sm);
 }
 

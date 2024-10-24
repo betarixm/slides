@@ -24,6 +24,6 @@ import SlideFooter from "../components/slide-footer.vue";
 .slidev-layout.leaflet blockquote {
   color: var(--color-light-background-base);
   font-size: var(--font-size-xs);
-  font-weight: 300;
+  font-weight: 150;
 }
 </style>
