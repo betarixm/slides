@@ -132,7 +132,7 @@ layout: leaflet
 
 ---
 
-### Rule: 짧은 이름보다 긴 이름이 좋다 (3)
+### Rule: 짧은 이름보다 긴 이름이 좋다 (2)
 
 - Clean Code (Martin, Robert C, 2008)
   - 이름의 길이는 코드의 단순성에 영향을 미치지 않는다.
@@ -144,7 +144,7 @@ layout: leaflet
   
 ---
 
-### Rule: 짧은 이름보다 긴 이름이 좋다 (4)
+### Rule: 짧은 이름보다 긴 이름이 좋다 (3)
 
 ```python
 def some_function(a, cfg):
@@ -161,7 +161,7 @@ def to_number(data: bytes) -> int:
 
 ---
 
-### Rule: 짧은 이름보다 긴 이름이 좋다 (5)
+### Rule: 짧은 이름보다 긴 이름이 좋다 (4)
 
 ```python
 def select_variable_or_empty(...): # 무엇을 선택하는 함수인지 명확하지 않다.
@@ -445,30 +445,22 @@ def get_unused_offsets_or_empty(
 
 ---
 
-### Rule: 클래스를 만들기 전에 한 번 더 생각해보자 (1)
+### Rule: 클래스는 State Machine이다 (1)
 
-- 클래스는 코드의 확장성을 낮춘다.
-  - 클래스는 근본적으로 **비즈니스 로직을 컨텍스트에 가두는 장치**이다.
-  - 클래스에 갇힌 비즈니스 로직은 재사용이 어렵다.
-- 비즈니스 로직을 클래스의 메서드로 구현하기보다 일반적인 함수로 구현해보자.
-  - 일반적인 함수는 어디서든 이용될 수 있다.
-    - 전역변수를 사용하지 않는다면.
+- 클래스는 단순히 함수들을 모아 놓기 위한 수단이 아니다.
+- 클래스를 선언할 때에는 항상 인스턴스가 일종의 “State Machine” 임을 명심하자.
+  - Private variable은 인스턴스의 상태를 나타낸다.
+  - Method는 인스턴스의 상태를 변화시킨다.
+  - Property는 인스턴스의 computed 속성을 읽어낸다.
 
 ---
 
-### Rule: 클래스를 만들기 전에 한 번 더 생각해보자 (2)
+### Rule: 클래스를 만들기 전에 한 번 더 생각해보자 (1)
 
-```python
-class ShoppingCart:
-    def __init__(self, items: Item[], tax_rate: float):
-        self.items = items
-        self.tax_rate = tax_rate
-
-    def calculate_total_price(self): # 이 로직을 굳이 메서드로 만들어야할까?
-        total = sum(item.price for item in self.items)
-        tax = total * self.tax_rate
-        return total + tax
-```
+- 클래스는 코드의 확장성을 낮춘다.
+  - 클래스는 근본적으로 **비즈니스 로직을 state에 가두는 장치**이다.
+  - 클래스에 갇힌 비즈니스 로직은 재사용이 어렵다.
+- 비즈니스 로직을 클래스의 메서드로 구현하기보다 일반적인 함수로 구현해보자.
 
 ---
 
