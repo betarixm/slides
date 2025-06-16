@@ -1,6 +1,6 @@
 ---
 theme: ../../../../themes/blue
-titleTemplate: '%s'
+titleTemplate: "%s"
 author: Minjae Gwon
 keywords: Clean Code,Collaboration
 presenter: false
@@ -141,7 +141,7 @@ layout: leaflet
   - 또한, variable이나 string 같은 불용어를 이름에 포함하는 것은 도움이 되지 못한다.
     - 그러므로 읽는 사람이 차이를 알도록 이름을 지어야 한다.
   - 발음하기 쉬운 단어가 두뇌에서 처리하기 쉬우며, 발음하기 어려운 이름은 토론하기도 어렵다.
-  
+
 ---
 
 ### Rule: 짧은 이름보다 긴 이름이 좋다 (3)
@@ -167,7 +167,7 @@ def to_number(data: bytes) -> int:
 def select_variable_or_empty(...): # 무엇을 선택하는 함수인지 명확하지 않다.
   # 잘 지은 이름은 로직을 보지 않아도 함수의 역할을 알 수 있게 만든다.
   for send_variable in send_variables:
-    min_difference = 0x100000000 
+    min_difference = 0x100000000
     min_variable = None
     for recv_variable in recv_variables:
         difference = send_variable.value - recv_variable.value
@@ -198,9 +198,9 @@ def calculate_total(order):
     total = 0
     for item in order:
         if item.type == "food": # 음식 항목의 경우 수량을 곱한 값을 더한다
-            total += item.price * item.quantity 
+            total += item.price * item.quantity
         else: # 음료 항목의 경우 그냥 가격을 더한다
-            total += item.price * 2 
+            total += item.price * 2
     tax = total * 0.2  # 세금을 계산한다 (10%)
     return total + tax # 총 금액에 세금을 더한다
 ```
@@ -226,10 +226,10 @@ def calculate_drink_item_cost(item):
 ### Rule: Null을 주고 받지 마라
 
 - Clean Code (Martin, Robert C, 2008)
-  - *Don't Return Null*
+  - _Don't Return Null_
     - `null`을 반환하는 코드는 작성해야할 코드를 증가시킬 뿐만 아니라 호출자에게 책임을 맡긴다.
     - 외부 라이브러리가 `null`을 반환한다면 감싸서 예외를 던지거나 특수 사례 객체를 반환하자.
-  - *Don't Pass Null*
+  - _Don't Pass Null_
     - `null`을 인수로 받을 수 있도록 설계된 언어가 아니라면 `null`의 전달은 최대한 피해야한다.
 
 ---
@@ -251,6 +251,9 @@ def calculate_drink_item_cost(item):
   - 코드를 읽는 사람에게 코드의 의도를 알려준다.
 - 테스트 코드를 작성하는 것과 같은 효과를 낸다.
   - 코드의 품질을 높인다.
+- Q: 언제 에러를 raise하고 언제 assertion을 걸어야 하나요?
+  - 특정 로직에 의해 논리적으로 보장되는 경우에 대해서는 assertion
+  - 외부 환경에 의해 예상치 못한 상황에 대해서는 예외 발생
 
 ---
 
@@ -391,11 +394,11 @@ def try_decode_hex(payload: bytes) -> list[bytes]:
 ```python
 def process_order(order): # 재사용성이 떨어진다.
     total_with_tax = total + tax
-    
+
     # 주문 내역 출력
     print("Order Details:")
     print(f"Total: {total_with_tax}")
-    
+
     # 이메일 전송
     send_order_confirmation_email(order, total_with_tax)
 ```
@@ -629,9 +632,9 @@ layout: leaflet
 
 - The Mythical Man-Month (Fred Brooks, 1975)
   - **프로그래머들의 실력에 따라서 생산성은 10배까지, 효율성은 5배까지 차이가 난다.**
-    - *다양한 실력의 프로그래머들로 이루어진 큰 팀*
+    - _다양한 실력의 프로그래머들로 이루어진 큰 팀_
       - i.e. The Mythical Man-Month
-    - *베테랑 프로그래머들로만 이루어진 작은 팀*
+    - _베테랑 프로그래머들로만 이루어진 작은 팀_
       - 큰 프로젝트를 수행하기에 너무 오랜 시간을 필요로 한다.
 
 ---
