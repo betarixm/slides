@@ -23,7 +23,7 @@ htmlAttrs:
 layout: cover
 ---
 
-# Nemotron-CORTEXA: Enhancing LLM Agents for Software Engineering Tasks via Improved Localization and Solution Diversity
+# Enhancing LLM Agents for Software Engineering Tasks via Improved Localization and Solution Diversity
 
 > Sohrabizadeh, A., Song, J., Liu, M., Roy, R., Lee, C., Raiman, J., & Catanzaro, B. (2025). Nemotron-CORTEXA: Enhancing LLM Agents for Software Engineering Tasks via Improved Localization and Solution Diversity. Forty-Second International Conference on Machine Learning.
 
